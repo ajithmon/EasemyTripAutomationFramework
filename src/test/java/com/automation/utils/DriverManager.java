@@ -2,6 +2,8 @@ package com.automation.utils;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -33,6 +35,10 @@ public class DriverManager {
 
     public static WebDriver getDriver() {
         return driver;
+    }
+
+    public static byte[] getScreenshot() {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }
 

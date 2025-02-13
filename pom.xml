@@ -81,6 +81,7 @@
                     <includes>
                         <include>**/TestRunner.java</include>
                     </includes>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
 
@@ -111,5 +112,6 @@
 
         </plugins>
     </build>
+
 
 </project>

@@ -22,7 +22,7 @@ public class WebFlightBookingPage extends BasePage implements FlightBookingPage 
     @FindBy(xpath = "//span[@ng-bind='CurrencyDisplayRate(TtlDisplayTax)']")
     WebElement tax;
 
-    @FindBy(xpath = "//span[@id='spnGrndTotal']")
+    @FindBy(xpath = "//span[@id='spnGrndTotal']1")
     WebElement total;
 
     public boolean isFlightBookingPageDisplayed(){

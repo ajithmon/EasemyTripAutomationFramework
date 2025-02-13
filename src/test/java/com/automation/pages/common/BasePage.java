@@ -14,7 +14,7 @@ import java.util.Date;
 
 public class BasePage {
 
-     public  WebDriver driver;
+    public  WebDriver driver;
     WebDriverWait wait;
 
     public BasePage() {
